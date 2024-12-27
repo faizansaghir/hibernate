@@ -4,6 +4,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
 
 import java.io.File;
 
@@ -23,15 +24,17 @@ public class App
 
         Configuration configuration = new Configuration().configure().addAnnotatedClass(Alien.class);
 
-        SessionFactory sessionFactory = configuration.buildSessionFactory();
+        Session session;
+        try (SessionFactory sessionFactory = configuration.buildSessionFactory()) {
 
-        Session session = sessionFactory.openSession();
+            session = sessionFactory.openSession();
 
-        Transaction tx = session.beginTransaction();
+            Transaction tx = session.beginTransaction();
 
-        session.save(a1);
+            session.persist(a1);
 
-        tx.commit();
+            tx.commit();
+        }
 
     }
 }
