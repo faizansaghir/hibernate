@@ -1,14 +1,20 @@
 package io.github.faizansaghir;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-@Entity
+@Entity(name = "alien")
+@Table(name="alien")
 public class Alien {
 
     @Id
+    @Column(name = "aid")
     private int aid;
+    @Column(name = "aname")
     private String aname;
+    @Column(name = "color")
     private String color;
 
     public int getAid() {

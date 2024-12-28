@@ -19,3 +19,8 @@ This repository is to track learning and development for Hibernate
     We write query and populate the query with required data from object to persist them in the database. <br>
     As an alternate, we can use framework such as Hibernate which takes care of connecting to DB and persisting data. <br>
     Using such ORM tool, we need not worry about writing SQL queries for simple tasks. <br><br>
+4. <strong>Table, Entity and Class</strong> <br>
+    When we create a class with <code>@Entity</code>, it by default has entity and table name same as class name in lower case. <br>
+    If we specify the <code>name</code> attribute in <code>@Entity</code> then it changes the entity name and table name(if not specified). <br>
+    If we specify the <code>name</code> attribute in <code>@Table</code> then it changes the table name only. <br>
+    <strong>@Transient</strong>: Annotation to tell hibernate that the column value is not to be stored. <br><br>
