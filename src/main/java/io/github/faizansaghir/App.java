@@ -15,9 +15,9 @@ public class App
     {
         Alien a1 = new Alien();
 
-        a1.setAid(101);
-        a1.setAname("Alien 1");
-        a1.setColor("Green");
+        a1.setAid(102);
+        a1.setAname("Alien 2");
+        a1.setColor("Orange");
 
         Configuration configuration = new Configuration().configure().addAnnotatedClass(Alien.class);
 
