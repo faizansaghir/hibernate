@@ -12,8 +12,8 @@ public class Alien {
     @Id
     @Column(name = "aid")
     private int aid;
-    @Column(name = "aname")
-    private String aname;
+
+    private Name aname;
     @Column(name = "color")
     private String color;
 
@@ -25,11 +25,11 @@ public class Alien {
         this.aid = aid;
     }
 
-    public String getAname() {
+    public Name getAname() {
         return aname;
     }
 
-    public void setAname(String aname) {
+    public void setAname(Name aname) {
         this.aname = aname;
     }
 
@@ -45,7 +45,7 @@ public class Alien {
     public String toString() {
         return "Alien{" +
                 "aid=" + aid +
-                ", aname='" + aname + '\'' +
+                ", aname=" + aname +
                 ", color='" + color + '\'' +
                 '}';
     }

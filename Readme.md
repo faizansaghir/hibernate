@@ -24,3 +24,7 @@ This repository is to track learning and development for Hibernate
     If we specify the <code>name</code> attribute in <code>@Entity</code> then it changes the entity name and table name(if not specified). <br>
     If we specify the <code>name</code> attribute in <code>@Table</code> then it changes the table name only. <br>
     <strong>@Transient</strong>: Annotation to tell hibernate that the column value is not to be stored. <br><br>
+5. <strong>Embeddable</strong> <br>
+    If a field of an Entity is complex or can be separated out into a logical class, we can create a new class for the same. <br>
+    This new class needs to have <code>@Embeddable</code> which tells Hibernate that the field is not a separate entity. <br>
+    The fields of the Embeddable object will be separated out into multiple columns with the parent table itself. <br><br>

@@ -17,8 +17,8 @@ public class App
 
         try (SessionFactory sessionFactory = configuration.buildSessionFactory()) {
             Session session = sessionFactory.openSession();
-        // createAlien(session);
-            getAline(session);
+            createAlien(session);
+            // getAline(session);
 
         }
     }
@@ -34,8 +34,13 @@ public class App
     private static void createAlien(Session session) {
         Alien a1 = new Alien();
 
+        Name name = new Name();
+        name.setFname("Faizan");
+        name.setMname("Rashid");
+        name.setLname("Saghir");
+
         a1.setAid(102);
-        a1.setAname("Alien 2");
+        a1.setAname(name);
         a1.setColor("Orange");
 
         Transaction tx = session.beginTransaction();
