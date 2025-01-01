@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4efc733-57ef-4066-b3c8-91edab7c2084" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
     </list>
@@ -41,10 +42,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "Application.SchoolApp.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.hibernate [clean,compile,package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "tasks.servers"
@@ -56,14 +59,30 @@
       <recent name="C:\Users\world\IdeaProjects\hibernate" />
       <recent name="C:\Users\world\IdeaProjects\hibernate\src\main" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="io.github.faizansaghir" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.SchoolApp">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.github.faizansaghir.App" />
       <module name="hibernate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.github.faizansaghir.*" />
+          <option name="PATTERN" value="io.github.faizansaghir.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SchoolApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.faizansaghir.SchoolApp" />
+      <module name="hibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.faizansaghir.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,11 +123,13 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.SchoolApp" />
       <item itemvalue="Application.App" />
       <item itemvalue="Maven.hibernate [clean,compile,package]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SchoolApp" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
